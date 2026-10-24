@@ -49,10 +49,10 @@ function About() {
               <div className="relative mx-auto h-52 w-52 overflow-hidden rounded-full border border-blue-500/30 bg-gradient-to-br from-blue-600/20 to-purple-600/10 shadow-xl shadow-blue-600/10">
 
                 <img
-                  src="/profile-photo.png"
-                  alt="Charles Ouma"
-                  className="h-full w-full object-cover"
-                />
+  src={`${import.meta.env.BASE_URL}profile-photo.png`}
+  alt="Charles Ouma"
+  className="h-full w-full object-cover"
+/>
 
               </div>
 
