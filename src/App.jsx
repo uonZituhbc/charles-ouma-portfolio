@@ -15,7 +15,8 @@ function App() {
   const [user, setUser] = useState(null);
   const [checkingAuth, setCheckingAuth] = useState(true);
 
-  const isAdminPage = window.location.pathname === "/admin";
+  const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
+const isAdminPage = window.location.pathname === `${basePath}/admin`;
 
   useEffect(() => {
     if (!isAdminPage) {
