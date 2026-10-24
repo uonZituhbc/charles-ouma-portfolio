@@ -8,6 +8,8 @@ import Contact from "./components/Contact";
 import Patnership from "./components/Patnership";
 import AdminLogin from "./components/AdminLogin";
 import AdminDashboard from "./components/AdminDashboard";
+import VisitorTracker from "./components/VisitorTracker";
+import VisitorStats from "./components/VisitorStats";
 
 import { supabase } from "./services/supabase";
 
@@ -22,6 +24,7 @@ function App() {
       setCheckingAuth(false);
       return;
     }
+
 
     checkAdminSession();
 
@@ -83,7 +86,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-[#050816] text-white">
-
+<VisitorTracker />
       {/* ================= NAVIGATION ================= */}
 
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-[#050816]/80 backdrop-blur-lg">
@@ -354,6 +357,7 @@ function App() {
         {/* ================= STATISTICS ================= */}
 
         <Stats />
+<VisitorStats />
 
         {/* ================= ABOUT ================= */}
 
