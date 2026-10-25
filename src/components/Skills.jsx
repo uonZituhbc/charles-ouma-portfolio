@@ -6,7 +6,6 @@ import {
   Server,
   Database,
   GitBranch,
-  
   Cpu,
 } from "lucide-react";
 import { supabase } from "../services/supabase";
@@ -81,7 +80,7 @@ function Skills() {
   return (
     <section
       id="skills"
-      className="relative overflow-hidden border-y border-white/10 px-6 py-32"
+      className="relative overflow-hidden border-y border-white/10 px-6 py-16 sm:py-20 lg:py-32"
     >
       {/* Background glow */}
       <div className="pointer-events-none absolute left-0 top-1/4 h-80 w-80 rounded-full bg-blue-600/10 blur-[130px]" />

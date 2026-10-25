@@ -118,18 +118,18 @@ function Contact() {
     },
     {
       name: "YouTube",
-      description: "@oumacharles001",
+      description: "@oumacharles-lenz",
       mark: "YT",
-      href: "https://youtube.com/@oumacharles001",
+      href: "https://youtube.com/@oumacharles-lenz",
       iconClass: "text-red-400",
       bgClass: "bg-red-500/10",
       borderClass: "hover:border-red-500/30",
     },
     {
       name: "X",
-      description: "@oumacharles001",
+      description: "@charle58688",
       mark: "𝕏",
-      href: "https://x.com/oumacharles001",
+      href: "https://x.com/charle58688",
       iconClass: "text-white",
       bgClass: "bg-white/10",
       borderClass: "hover:border-white/20",
@@ -157,7 +157,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden border-t border-white/10 px-6 py-32"
+      className="relative overflow-hidden border-t border-white/10 px-6 py-16 sm:py-20 lg:py-32"
     >
       {/* Background glow */}
       <div className="pointer-events-none absolute left-0 top-1/4 h-96 w-96 rounded-full bg-blue-600/10 blur-[140px]" />
@@ -185,7 +185,7 @@ function Contact() {
         </div>
 
         {/* Contact area */}
-        <div className="mt-16 grid gap-10 lg:grid-cols-5">
+        <div className="mt-12 grid gap-10 lg:mt-16 lg:grid-cols-5">
 
           {/* Contact Information */}
           <div className="lg:col-span-2">
@@ -418,7 +418,7 @@ function Contact() {
         </div>
 
         {/* Social & Direct Contact */}
-        <div className="mt-20">
+        <div className="mt-12 lg:mt-20">
 
           <div className="mx-auto max-w-3xl text-center">
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">

@@ -31,7 +31,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="relative overflow-hidden px-6 py-24"
+      className="relative overflow-hidden px-6 py-16 sm:py-20 lg:py-24"
     >
       {/* Background glow */}
       <div className="pointer-events-none absolute left-1/4 top-20 h-72 w-72 rounded-full bg-blue-600/10 blur-[120px]" />
@@ -39,7 +39,7 @@ function Projects() {
 
       <div className="relative mx-auto max-w-7xl">
         {/* Section heading */}
-        <div className="mx-auto mb-16 max-w-3xl text-center">
+        <div className="mx-auto mb-10 max-w-3xl text-center sm:mb-12 lg:mb-16">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">
             My Work
           </p>
@@ -168,7 +168,7 @@ function Projects() {
                         className="inline-flex items-center gap-2 rounded-full border border-white/10 px-5 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-blue-500/40 hover:text-white"
                       >
                         <span className="text-sm font-bold">GH</span>
-GitHub
+                        GitHub
                       </a>
                     )}
                   </div>

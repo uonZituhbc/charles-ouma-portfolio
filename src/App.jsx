@@ -104,15 +104,19 @@ function App() {
             <a href="#home" className="transition hover:text-blue-400">
               Home
             </a>
+
             <a href="#about" className="transition hover:text-blue-400">
               About
             </a>
+
             <a href="#skills" className="transition hover:text-blue-400">
               Skills
             </a>
+
             <a href="#projects" className="transition hover:text-blue-400">
               Projects
             </a>
+
             <a href="#contact" className="transition hover:text-blue-400">
               Contact
             </a>
@@ -134,17 +138,18 @@ function App() {
 
         <section
           id="home"
-          className="relative isolate flex min-h-[100svh] items-center overflow-hidden bg-[#050816] px-6 pb-16 pt-32 sm:pt-28"
+          className="relative isolate flex min-h-[100svh] items-start overflow-hidden bg-[#050816] px-6 pb-16 pt-20 sm:items-center sm:pt-28"
         >
           {/* Clear Video Background */}
           <video
-            className="absolute inset-0 -z-30 h-full w-full object-cover object-center"
+            className="absolute inset-0 -z-30 h-full w-full object-contain object-center sm:object-cover sm:object-center"
             src={`${import.meta.env.BASE_URL}hero/charles_hero_polished.mp4`}
             autoPlay
             loop
             muted
             playsInline
             preload="auto"
+            fetchPriority="high"
             aria-hidden="true"
           />
 
@@ -168,6 +173,7 @@ function App() {
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-60" />
                   <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-green-400" />
                 </span>
+
                 Available for collaboration
               </div>
 
@@ -177,6 +183,7 @@ function App() {
 
               <h1 className="max-w-5xl text-5xl font-extrabold leading-[1.04] tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl">
                 Building
+
                 <span className="mt-2 block bg-gradient-to-r from-blue-300 via-blue-500 to-cyan-300 bg-clip-text pb-2 text-transparent">
                   Digital Solutions.
                 </span>
@@ -198,6 +205,7 @@ function App() {
                   className="group inline-flex items-center justify-center gap-2 rounded-full bg-blue-600 px-7 py-3.5 font-semibold text-white shadow-lg shadow-blue-600/25 transition duration-300 hover:-translate-y-1 hover:bg-blue-500 hover:shadow-xl"
                 >
                   View My Work
+
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     →
                   </span>
@@ -213,11 +221,17 @@ function App() {
 
               <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm font-medium text-white">
                 <span>Web Development</span>
+
                 <span className="hidden h-1 w-1 rounded-full bg-blue-400 sm:block" />
+
                 <span>Full Stack</span>
+
                 <span className="hidden h-1 w-1 rounded-full bg-blue-400 sm:block" />
+
                 <span>Supabase</span>
+
                 <span className="hidden h-1 w-1 rounded-full bg-blue-400 sm:block" />
+
                 <span>PostgreSQL</span>
               </div>
 
@@ -228,6 +242,7 @@ function App() {
                 <span className="flex h-8 w-5 items-start justify-center rounded-full border border-white/40 p-1">
                   <span className="h-2 w-1 animate-bounce rounded-full bg-blue-400" />
                 </span>
+
                 Explore my work
               </a>
             </div>
@@ -268,4 +283,5 @@ function App() {
     </div>
   );
 }
+
 export default App;

@@ -81,20 +81,22 @@ function Partnership() {
       text: "Your collaboration request has been submitted successfully.",
     });
 
+    // Tell the Stats component to refresh the collaboration count
+    window.dispatchEvent(new Event("partnershipSubmitted"));
+
     setSending(false);
   }
 
   return (
     <section
       id="partnership"
-      className="relative overflow-hidden border-t border-white/10 px-6 py-32"
+      className="relative overflow-hidden border-t border-white/10 px-6 py-16 sm:py-20 lg:py-32"
     >
       {/* Background glow */}
       <div className="pointer-events-none absolute right-0 top-1/4 h-96 w-96 rounded-full bg-purple-600/10 blur-[140px]" />
       <div className="pointer-events-none absolute bottom-0 left-0 h-72 w-72 rounded-full bg-blue-600/10 blur-[130px]" />
 
       <div className="relative mx-auto max-w-7xl">
-
         {/* Heading */}
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">
@@ -115,13 +117,10 @@ function Partnership() {
           </p>
         </div>
 
-        <div className="mt-16 grid gap-10 lg:grid-cols-5">
-
+        <div className="mt-12 grid gap-10 lg:mt-16 lg:grid-cols-5">
           {/* Information */}
           <div className="lg:col-span-2">
-
             <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-7 sm:p-8">
-
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-blue-500/20 bg-blue-500/10 text-blue-400">
                 <Mail size={22} />
               </div>
@@ -137,7 +136,6 @@ function Partnership() {
               </p>
 
               <div className="mt-8 space-y-4">
-
                 <div className="group rounded-2xl border border-white/10 bg-black/20 p-5 transition hover:border-blue-500/30">
                   <div className="flex items-start gap-4">
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-blue-500/10 text-blue-400">
@@ -174,7 +172,7 @@ function Partnership() {
 
                 <div className="group rounded-2xl border border-white/10 bg-black/20 p-5 transition hover:border-blue-500/30">
                   <div className="flex items-start gap-4">
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-blue-500/10 text-blue-400">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-black/20 p-5 transition hover:border-blue-500/30">
                       <Lightbulb size={19} />
                     </div>
 
@@ -188,14 +186,12 @@ function Partnership() {
                     </div>
                   </div>
                 </div>
-
               </div>
 
               <div className="mt-8 flex items-center gap-2 text-sm text-gray-500">
                 <span className="h-2 w-2 rounded-full bg-green-400" />
                 Currently available for collaboration
               </div>
-
             </div>
           </div>
 
@@ -216,7 +212,6 @@ function Partnership() {
               </div>
 
               <div className="grid gap-6 sm:grid-cols-2">
-
                 <div>
                   <label
                     htmlFor="partnership-name"
@@ -256,7 +251,6 @@ function Partnership() {
                     className="w-full rounded-xl border border-white/10 bg-[#050816] px-4 py-3.5 text-white outline-none transition placeholder:text-gray-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500/30"
                   />
                 </div>
-
               </div>
 
               <div className="mt-6">
@@ -399,7 +393,6 @@ function Partnership() {
               </div>
             </form>
           </div>
-
         </div>
       </div>
     </section>
